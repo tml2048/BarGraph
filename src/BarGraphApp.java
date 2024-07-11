@@ -1,9 +1,6 @@
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-import java.awt.BorderLayout;
-import java.awt.Dimension;
 import java.awt.EventQueue;
 
 public class BarGraphApp implements Runnable {
@@ -16,9 +13,7 @@ public class BarGraphApp implements Runnable {
         JFrame myFrame = new JFrame("Bar Graph App");
         myFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-        JPanel mainPanel = new JPanel();
-        mainPanel.setPreferredSize(new Dimension(400, 600));
-        mainPanel.setLayout(new BorderLayout());
+        JPanel mainPanel = new BarGraphGUI();
         myFrame.getContentPane().add(mainPanel);
 
         myFrame.pack();
