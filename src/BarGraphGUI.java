@@ -9,15 +9,16 @@ import javax.swing.Timer;
 public class BarGraphGUI extends JPanel implements ActionListener {
 
     // fields
+    private BarLogic logic;
     private BarVisual visual;
     private BarOptions options;
-    private BarLogic logic;
 
     // constructor
     public BarGraphGUI() {
         this.logic = new BarLogic();
         this.visual = new BarVisual(logic);
         this.options = new BarOptions(logic);
+        
         this.setLayout(new BorderLayout());
         this.add(options, BorderLayout.NORTH);
         this.add(visual, BorderLayout.CENTER);

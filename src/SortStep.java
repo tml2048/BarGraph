@@ -30,5 +30,4 @@ public class SortStep {
     public int getIndexB() {
         return indexB;
     }
-
 }

@@ -232,7 +232,6 @@ public class BarLogic {
         quickSort(pivot + 1, highIndex);
     }
 
-
     public void step() {
         if (this.stepIndex == -1 || this.stepIndex == stepHistory.size())  {
             return;
@@ -265,10 +264,8 @@ public class BarLogic {
     }
 
     public SortStep getCurrentStep() {
-        if (this.stepIndex == -1 || this.stepIndex == stepHistory.size()) {
+        if (this.stepIndex == -1 || this.stepIndex == stepHistory.size())
             return null;
-        }
-        
         return stepHistory.get(stepIndex);
     }
 

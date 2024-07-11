@@ -28,6 +28,4 @@ public class Bar {
     public Color getColor() {
         return color;
     }
-
-
 }

@@ -75,7 +75,6 @@ public class BarVisual extends JPanel implements ActionListener {
         } 
         g.fillRect(getXPosition(step.getIndexA()), indicatorY, getBarWidth(), indicatorHeight);
         g.fillRect(getXPosition(step.getIndexB()), indicatorY, getBarWidth(), indicatorHeight);
-    
     }
 
     private int getXPosition(int index) {
@@ -85,8 +84,6 @@ public class BarVisual extends JPanel implements ActionListener {
     private int getBarWidth() {
         return this.getWidth() / logic.getBarCount();
     }
-
-
 
     @Override
     public void actionPerformed(ActionEvent e) {

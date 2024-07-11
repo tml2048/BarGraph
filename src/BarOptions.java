@@ -65,7 +65,8 @@ public class BarOptions extends JPanel implements ActionListener {
     }
 
     // methods
-    @Override public void paintComponent(Graphics g) {
+    @Override 
+    public void paintComponent(Graphics g) {
         super.paintComponent(g);
         this.compLabel.setText("Comps: " + logic.getComps());
         this.swapLabel.setText("Swaps: " + logic.getSwaps());
@@ -98,7 +99,6 @@ public class BarOptions extends JPanel implements ActionListener {
                 case "Quick Sort":
                     logic.quickSort();
                     break;
-
             }    
         }
     }
@@ -107,6 +107,5 @@ public class BarOptions extends JPanel implements ActionListener {
         if (autorun.getModel().isSelected()) {
             logic.step();
         }
-
     }
 }
