@@ -11,7 +11,7 @@ public class BarGraphApp implements Runnable {
     @Override
     public void run() {
         JFrame myFrame = new JFrame("Bar Graph App");
-        myFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JPanel mainPanel = new BarGraphGUI();
         myFrame.getContentPane().add(mainPanel);
